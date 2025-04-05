@@ -1,0 +1,14 @@
+.container {
+    width: 100%;
+    padding: 20px;
+}
+
+h2 {
+    font-weight: bold;
+    text-align: center;
+}
+
+ul {
+    width: 100%;
+    list-style-type: disc;
+}
