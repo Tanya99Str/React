@@ -1,4 +1,8 @@
-li {
+* {
+  box-sizing: border-box;
+}
+
+.list li {
   background-color: antiquewhite;
   margin-bottom: 5px;
 }

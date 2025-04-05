@@ -1,18 +1,19 @@
-import {CourseModel} from "../../models/CourseModel.ts";
-import {FC} from "react";
-import {coursesAndDurationArray} from "../../../array.ts";
-import CourseComponent from "../course-component/CourseComponent.tsx";
+import {coursesArray} from "../../../array.ts";
+import OneCourseComponent from "../one-course-component/OneCourseComponent.tsx";
+import {ICourse} from "../../models/ICourse.ts";
+import './CoursesComponent.css';
 
- const CoursesComponent= () => {
-    return (
-        <ul>
-            {
-                coursesAndDurationArray.map((course: CourseModel, index: number) => {
-                    return <CourseComponent course={course} key={index}/>
-                })
-            }
-        </ul>
-    );
-};
+const CoursesComponent = () => {
+    return(
+        <div className={'container'}>
 
- export default CoursesComponent;
+                {
+                    coursesArray.map((couse: ICourse, index: number) => {
+                        return <div className={'one-elem'}><OneCourseComponent course={couse} key={index} /></div>
+                    })
+                }
+        </div>
+    )
+}
+
+export default CoursesComponent;

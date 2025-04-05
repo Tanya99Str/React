@@ -1,22 +1,22 @@
 import './App.css';
-import {coursesAndDurationArray} from "../array.ts";
-import {CourseModel} from "./models/CourseModel.ts";
 import CoursesComponent from "./components/courses-component/CoursesComponent.tsx";
-let coursesTitleArray: string[] = [
-  'JavaScript Complex',
-  'Java Complex',
-  'Python Complex',
-  'QA Complex',
-  'Fullstack',
-  'Frontend'
-];
+// import FamilyComponent from "./components/family-component/FamilyComponent.tsx";
+// import CoursesDurationComponent from "./components/courses-duration-component/CoursesDurationComponent.tsx";
+// let coursesTitleArray: string[] = [
+//   'JavaScript Complex',
+//   'Java Complex',
+//   'Python Complex',
+//   'QA Complex',
+//   'Fullstack',
+//   'Frontend'
+// ];
 
 const App = () => {
-  return (
+    return (
       <>
         {/*lesson 1, task 1*/}
         {/*{*/}
-        {/*  <ul>*/}
+        {/*  <ul className={'list'}>*/}
         {/*    {*/}
         {/*      coursesTitleArray.map((value, index) => <li key={index}>{value}</li>)*/}
         {/*    }*/}
@@ -24,13 +24,13 @@ const App = () => {
         {/*}*/}
 
         {/*lesson 1, task 2*/}
-        <CoursesComponent/>
+        {/*<CoursesDurationComponent/>*/}
 
+        {/*lesson 1, task 3*/}
+        {/*  <FamilyComponent/>*/}
 
-
-
-
-
+          {/*lesson 1, task 4*/}
+          <CoursesComponent/>
 
 
 

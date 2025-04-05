@@ -5,10 +5,10 @@ type PropsType = {
     course?: CourseModel;
 }
 
- const CourseComponent: FC<PropsType> = ({course}) => {
+ const CourseDurationComponent: FC<PropsType> = ({course}) => {
     return (
         <li>{course?.title}, {course?.monthDuration}</li>
     );
 }
 
-export default CourseComponent;
+export default CourseDurationComponent;
