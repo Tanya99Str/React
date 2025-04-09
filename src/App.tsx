@@ -7,14 +7,14 @@ import './App.css';
 // import {CommentsComponent} from "./components/comments-component/CommentsComponent.tsx";
 // import {QuotesComponent} from "./components/quotes-component/QuotesComponent.tsx";
 import {ProductsComponent} from "./components/products-component/ProductsComponent.tsx";
-let coursesTitleArray: string[] = [
-  'JavaScript Complex',
-  'Java Complex',
-  'Python Complex',
-  'QA Complex',
-  'Fullstack',
-  'Frontend'
-];
+// let coursesTitleArray: string[] = [
+//   'JavaScript Complex',
+//   'Java Complex',
+//   'Python Complex',
+//   'QA Complex',
+//   'Fullstack',
+//   'Frontend'
+// ];
 
 const App = () => {
     return (
