@@ -1,0 +1,41 @@
+ul {
+    list-style-type: disc;
+    padding: 0 50px;
+}
+
+p {
+    word-break: break-all;
+}
+
+.galleryBlock {
+    width: 100%;
+    min-height: 200px;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.gallery {
+    height: 200px;
+    width: 200px;
+    background-position: center center;
+    background-size: cover;
+}
+
+.reviews-block {
+    width: 100%;
+}
+
+.review {
+    border-bottom: 1px solid silver;
+    padding: 10px 0;
+}
+
+.review:last-child {
+    border-bottom: none;
+}
+
+
+
+
