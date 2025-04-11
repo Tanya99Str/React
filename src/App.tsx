@@ -1,4 +1,6 @@
 import './App.css';
+import {NavMain} from "./components/nav-main/NavMain.tsx";
+import {Outlet} from "react-router-dom";
 // import CoursesComponent from "./components/courses-component/CoursesComponent.tsx";
 // import TodosComponent from "./components/todos-component/TodosComponent.tsx";
 // import FamilyComponent from "./components/family-component/FamilyComponent.tsx";
@@ -6,7 +8,7 @@ import './App.css';
 // import {PostsComponent} from "./components/posts-component/PostsComponent.tsx";
 // import {CommentsComponent} from "./components/comments-component/CommentsComponent.tsx";
 // import {QuotesComponent} from "./components/quotes-component/QuotesComponent.tsx";
-import {ProductsComponent} from "./components/products-component/ProductsComponent.tsx";
+// import {ProductsComponent} from "./components/products-component/ProductsComponent.tsx";
 // let coursesTitleArray: string[] = [
 //   'JavaScript Complex',
 //   'Java Complex',
@@ -51,7 +53,11 @@ const App = () => {
           {/*<QuotesComponent/>*/}
 
           {/*lesson 2, task 5                   - НА ПЕРЕВІРКУ*/}
-          <ProductsComponent/>
+          {/*<ProductsComponent/>*/}
+
+          {/*lesson 3, task #chszHaH9*/}
+          <NavMain/>
+          <Outlet/>
 
 
 
