@@ -56,6 +56,10 @@ const App = () => {
           {/*<ProductsComponent/>*/}
 
           {/*lesson 3, task #chszHaH9*/}
+          {/*<NavMain/>*/}
+          {/*<Outlet/>*/}
+
+          {/*lesson 3, task #qL0b5uh*/}
           <NavMain/>
           <Outlet/>
 

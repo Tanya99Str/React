@@ -1,12 +1,8 @@
 import {Link, Outlet} from "react-router-dom";
 
-export const UsersComponent = () => {
+export const PostsComponentLesson3 = () => {
     return (
-        // <>
-        //     Users Component
-        // </>
-
-        <div>
+        <>
             <ul>
                 <li>
                     <Link to="jsonplaceholder">jsonplaceholder</Link>
@@ -16,6 +12,6 @@ export const UsersComponent = () => {
                 </li>
             </ul>
             <Outlet/>
-        </div>
+        </>
     );
 };
