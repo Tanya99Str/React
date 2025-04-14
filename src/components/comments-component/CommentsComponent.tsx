@@ -1,10 +1,10 @@
-import {CommentModel} from "../../models/CommentModel.ts";
 import {useEffect, useState} from "react";
 import {loadComments} from "../../services/api.service.ts";
 import {CommentComponent} from "../comment-component/CommentComponent.tsx";
+import {CommentDummyjsonModel} from "../../models/CommentDummyjsonModel.ts";
 
 export const CommentsComponent = () => {
-    const [comments, setComment] = useState<CommentModel[]>();
+    const [comments, setComment] = useState<CommentDummyjsonModel[]>();
     useEffect(() => {
         loadComments().then(value => setComment(value));
     }, []);
