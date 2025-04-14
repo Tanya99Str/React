@@ -7,7 +7,7 @@ export const UsersComponent = () => {
         // </>
 
         <div>
-            <ul>
+            <ul style={{ padding: "10px 0" }}>
                 <li>
                     <Link to="jsonplaceholder">jsonplaceholder</Link>
                 </li>
