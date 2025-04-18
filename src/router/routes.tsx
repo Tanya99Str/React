@@ -17,7 +17,8 @@ import {createBrowserRouter} from "react-router-dom";
 // } from "../components/comments-jsonplaceholder-component/CommentsJsonplaceholderComponent.tsx";
 import {MainLayout} from "../layouts/MainLayout.tsx";
 import {UsersPage} from "../pages/users-page/UsersPage.tsx";
-import {PostsPage} from "../pages/posts-page/PostsPage.tsx";
+// import {PostsPage} from "../pages/posts-page/PostsPage.tsx";
+import {CartsPage} from "../pages/carts-page/CartsPage.tsx";
 // import {UsersComponent} from "../components/users-component/UsersComponent.tsx";
 // import {PostsComponent} from "../components/posts-component/PostsComponent.tsx";
 // import {ProductsComponent} from "../components/products-component/ProductsComponent.tsx";
@@ -59,9 +60,20 @@ import {PostsPage} from "../pages/posts-page/PostsPage.tsx";
 // ]);
 
 // task #tntlwuxFxI5
+// export const routes  = createBrowserRouter([
+//     {path: '/', element: <MainLayout/>, children: [
+//             {path: '/users', element: <UsersPage/>},
+//             {path: '/posts', element: <PostsPage/>}
+//         ]}
+// ]);
+
+// task #z5PFSTAK
 export const routes  = createBrowserRouter([
     {path: '/', element: <MainLayout/>, children: [
-            {path: '/users', element: <UsersPage/>},
-            {path: '/posts', element: <PostsPage/>}
+            {path: '/users', element: <UsersPage/>, children: [
+                    {path: ':id/carts', element: <CartsPage/>}
+                ]}
         ]}
 ]);
+
+

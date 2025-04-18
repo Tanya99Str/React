@@ -12,6 +12,8 @@ import {UserDummyjsonModel} from "../models/UserDummyjsonModel.ts";
 import {UserResponseDummyjson} from "../models/UserResponseDummyjson.ts";
 import {CommentDummyjsonModel} from "../models/CommentDummyjsonModel.ts";
 import {CommentResponseDummyjson} from "../models/CommentResponceDummyjson.ts";
+import {CartResponseDummyjson} from "../models/CartResponseDummyjson.ts";
+import {CartModel} from "../models/CartModel.ts";
 
 const endpointTodos = import.meta.env.VITE_API_BASE_URL + '/todos';
 const endpointPosts = import.meta.env.VITE_API_BASE_URL + '/posts';
@@ -19,6 +21,7 @@ const endpointComments = import.meta.env.VITE_API_BASE_URL + '/comments';
 const endpointQuotes = import.meta.env.VITE_API_BASE_URL + '/quotes';
 const endpointProducts = import.meta.env.VITE_API_BASE_URL + '/products';
 const endpointUsers = import.meta.env.VITE_API_BASE_URL + '/users';
+const endpointCarts = import.meta.env.VITE_API_BASE_URL + '/carts/user';
 
 // export const loadTodos = async (): Promise<TodoModel[]> => {
 //     return await fetch(endpointTodos).then(value => value.json());
@@ -74,4 +77,10 @@ export const loadUserDummyjson = async (): Promise<UserDummyjsonModel[]> => {
     const response: UserResponseDummyjson = await fetch(endpointUsers)
         .then(value => value.json());
     return response.users;
+}
+
+export const loadCarts = async (): Promise<CartModel[]> => {
+    const response: CartResponseDummyjson = await fetch(endpointCarts)
+        .then(value => value.json());
+    return response.carts;
 }
