@@ -68,12 +68,20 @@ import {CartsPage} from "../pages/carts-page/CartsPage.tsx";
 // ]);
 
 // task #z5PFSTAK
+// export const routes  = createBrowserRouter([
+//     {path: '/', element: <MainLayout/>, children: [
+//             {path: '/users', element: <UsersPage/>, children: [
+//                     {path: ':id/carts', element: <CartsPage/>}
+//                 ]}
+//         ]}
+// ]);
+
+
+// task #knZgVIwvqd
 export const routes  = createBrowserRouter([
     {path: '/', element: <MainLayout/>, children: [
-            {path: '/users', element: <UsersPage/>, children: [
-                    {path: ':id/carts', element: <CartsPage/>}
-                ]}
-        ]}
+            {path: 'users', element: <UsersPage/>},
+            {path: 'users/:id/carts', element: <CartsPage/>}
+    ]}
 ]);
-
 
