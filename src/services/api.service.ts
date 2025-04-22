@@ -79,6 +79,14 @@ export const loadUserDummyjson = async (): Promise<UserDummyjsonModel[]> => {
     return response.users;
 }
 
+export const loadUsersWithPagination = async (page: string): Promise<UserDummyjsonModel[]> => {
+    const limit = 30;
+    const skip = +page * limit - limit;
+    const response: UserResponseDummyjson = await fetch(endpointUsers + '?skip=' + skip)
+        .then(value => value.json());
+    return response.users;
+}
+
 export const loadCarts = async (): Promise<CartModel[]> => {
     const response: CartResponseDummyjson = await fetch(endpointCarts)
         .then(value => value.json());
