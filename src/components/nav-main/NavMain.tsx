@@ -5,18 +5,24 @@ export const NavMain = () => {
     return (
         <div className={'container'}>
             <ul>
-                <li>
-                    <Link to="/users">Users</Link>
-                </li>
-                <li>
-                    <Link to="/posts">Posts</Link>
-                </li>
+                {/*<li>*/}
+                {/*    <Link to="/users">Users</Link>*/}
+                {/*</li>*/}
+                {/*<li>*/}
+                {/*    <Link to="/posts">Posts</Link>*/}
+                {/*</li>*/}
                 {/*<li>*/}
                 {/*    <Link to="/comments">Comments</Link>*/}
                 {/*</li>*/}
                 {/*<li>*/}
                 {/*    <Link to="/products">Products</Link>*/}
                 {/*</li>*/}
+                <li>
+                    <Link to="/cars">Cars</Link>
+                </li>
+                <li>
+                    <Link to="/cars/create">New car</Link>
+                </li>
             </ul>
         </div>
     );

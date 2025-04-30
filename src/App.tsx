@@ -1,6 +1,6 @@
 import './App.css';
-import {NavMain} from "./components/nav-main/NavMain.tsx";
-import {Outlet} from "react-router-dom";
+// import {NavMain} from "./components/nav-main/NavMain.tsx";
+// import {Outlet} from "react-router-dom";
 // import CoursesComponent from "./components/courses-component/CoursesComponent.tsx";
 // import TodosComponent from "./components/todos-component/TodosComponent.tsx";
 // import FamilyComponent from "./components/family-component/FamilyComponent.tsx";
@@ -60,8 +60,10 @@ const App = () => {
           {/*<Outlet/>*/}
 
           {/*lesson 3, task #qL0b5uh*/}
-          <NavMain/>
-          <Outlet/>
+          {/*<NavMain/>*/}
+          {/*<Outlet/>*/}
+
+          {/*lesson 5*/}
 
 
 

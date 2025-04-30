@@ -3,7 +3,7 @@ import {useEffect, useState} from "react";
 import {UserDummyjsonModel} from "../../models/UserDummyjsonModel.ts";
 import {loadUsersWithPagination} from "../../services/api.service.ts";
 import {UserDummyjsonComponent} from "../user-dummyjson-component/UserDummyjsonComponent.tsx";
-import {PaginationComponent} from "../pagination-component/PaginationComponent.tsx";
+// import {PaginationComponent} from "../pagination-component/PaginationComponent.tsx";
 import {useSearchParams} from "react-router-dom";
 // import {Outlet} from "react-router-dom";
 
@@ -31,7 +31,7 @@ export const UsersDummyjsonComponent = () => {
                     )
                 }
             </div>
-            <PaginationComponent totalUsers={total} />
+            {/*<PaginationComponent totalUsers={total} />*/}
         </div>
     );
 };

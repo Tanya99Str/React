@@ -16,9 +16,11 @@ import {createBrowserRouter} from "react-router-dom";
 //     CommentsJsonplaceholderComponent
 // } from "../components/comments-jsonplaceholder-component/CommentsJsonplaceholderComponent.tsx";
 import {MainLayout} from "../layouts/MainLayout.tsx";
-import {UsersPage} from "../pages/users-page/UsersPage.tsx";
+// import {UsersPage} from "../pages/users-page/UsersPage.tsx";
 // import {PostsPage} from "../pages/posts-page/PostsPage.tsx";
-import {CartsPage} from "../pages/carts-page/CartsPage.tsx";
+// import {CartsPage} from "../pages/carts-page/CartsPage.tsx";
+import {CarsPage} from "../pages/cars-page/CarsPage.tsx";
+import {CreateCarPage} from "../pages/create-car-page/CreateCarPage.tsx";
 // import {UsersComponent} from "../components/users-component/UsersComponent.tsx";
 // import {PostsComponent} from "../components/posts-component/PostsComponent.tsx";
 // import {ProductsComponent} from "../components/products-component/ProductsComponent.tsx";
@@ -78,10 +80,18 @@ import {CartsPage} from "../pages/carts-page/CartsPage.tsx";
 
 
 // task #knZgVIwvqd
+// export const routes  = createBrowserRouter([
+//     {path: '/', element: <MainLayout/>, children: [
+//             {path: 'users', element: <UsersPage/>},
+//             {path: 'users/:id/carts', element: <CartsPage/>}
+//     ]}
+// ]);
+
+// lesson 5
 export const routes  = createBrowserRouter([
     {path: '/', element: <MainLayout/>, children: [
-            {path: 'users', element: <UsersPage/>},
-            {path: 'users/:id/carts', element: <CartsPage/>}
+            {path: 'cars', element: <CarsPage/>},
+            {path: 'cars/create', element: <CreateCarPage/>},
     ]}
 ]);
 
