@@ -11,9 +11,12 @@ export const UsersDummyjsonComponent = () => {
 
     const [users, setUsers] = useState<UserDummyjsonModel[]>([]);
     const [searchParams] = useSearchParams({page: '1'});
+    const [total, setTotal] = useState(0);
     useEffect(() => {
         const currentPage = searchParams.get('page') || '1';
-        loadUsersWithPagination(currentPage).then(val => setUsers(val));
+        loadUsersWithPagination(currentPage).then(val =>
+        {setUsers(val.users); setTotal(val.total)});
+        console.log(total);
     }, [searchParams]);
 
     return (
@@ -28,7 +31,7 @@ export const UsersDummyjsonComponent = () => {
                     )
                 }
             </div>
-            <PaginationComponent/>
+            <PaginationComponent totalUsers={total} />
         </div>
     );
 };
