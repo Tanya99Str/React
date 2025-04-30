@@ -1,10 +1,10 @@
 import './PaginationComponent.css';
 import {useSearchParams} from "react-router-dom";
 
-export const PaginationComponent = () => {
+export const PaginationComponent = (totalUsers: number) => {
     const [searchParams, setSearchParams] = useSearchParams({page: '1'});
     let currentPage = Number(searchParams.get("page") || '1');
-
+    // console.log(totalUsers);
     return (
         <div className="pagination">
             <button onClick={() => {
@@ -14,7 +14,13 @@ export const PaginationComponent = () => {
             }}>Назад
             </button>
             <button onClick={() => {
-                setSearchParams({page: (++currentPage).toString()});
+
+                console.log(typeof parseInt(totalUsers.toString()));
+                console.log(currentPage < parseInt(totalUsers.toString())/30);
+
+                if (currentPage < parseInt(totalUsers.toString())/30) {
+                    setSearchParams({page: (++currentPage).toString()});
+                }
             }}>Вперед
             </button>
         </div>
