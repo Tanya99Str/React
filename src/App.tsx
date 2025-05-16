@@ -1,11 +1,21 @@
 import './App.css';
-import {Outlet} from "react-router-dom";
+import {useFetch} from "./hooks/useFetch.tsx";
+import {PostModel} from "./models/PostModel.ts";
 
 const App = () => {
+
+    const posts = useFetch<PostModel[]>('https://jsonplaceholder.typicode.com/posts', [])
+
     return (
       <>
-          <Outlet/>
-        </>
+         <ul>
+             {
+                 posts.map((post) =>
+                     <li>{post.title}</li>
+                 )
+             }
+         </ul>
+      </>
   )
 }
 
