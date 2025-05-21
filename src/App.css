@@ -6,3 +6,11 @@
   background-color: antiquewhite;
   margin-bottom: 5px;
 }
+
+.dark {
+  background-color: darkcyan;
+}
+
+.light {
+  background-color: lightgoldenrodyellow;
+}
