@@ -11,7 +11,7 @@ const App = () => {
          <ul>
              {
                  posts.map((post) =>
-                     <li>{post.title}</li>
+                     <>{post.title}</>
                  )
              }
          </ul>
